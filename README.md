@@ -1,7 +1,21 @@
 # vagrant-centos
 Centos Vagrant recipes for a development machine
 
-# Run and update
+# Run
+
+To run this machine you must enable the Virtual Box Guest Plugin: 
+
+```sh
+vagrant plugin install vagrant-vbguest
+```
+
+Then just do 
+
+```sh
+vagrant up
+vagrant ssh
+
+# Update
 
 ```sh
 vagrant up
