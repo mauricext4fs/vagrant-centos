@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-sudo yum installhttps://centos7.iuscommunity.org/ius-release.rpm
+sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
 sudo yum update -y && sudo yum install -y git2u-all curl gcc kernel-devel kernel-headers dkms make bzip2 perl wget net-tools vim
 export KERN_DIR=/usr/src/kernels/`uname -r`
 
