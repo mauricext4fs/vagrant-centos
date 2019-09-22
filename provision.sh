@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
-sudo yum update -y && sudo yum install -y git2u-all curl gcc kernel-devel kernel-headers dkms make bzip2 perl wget net-tools vim rsync
+sudo yum update -y && sudo yum install -y git2u-all curl gcc kernel-devel kernel-headers dkms make bzip2 perl wget net-tools vim rsync bind-utils whois bash-completion*
 export KERN_DIR=/usr/src/kernels/`uname -r`
 
 #wget http://download.virtualbox.org/virtualbox/6.0.10/VBoxGuestAdditions_6.0.10.iso
