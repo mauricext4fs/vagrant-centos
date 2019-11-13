@@ -1,7 +1,11 @@
 #!/bin/bash
+sudo yum groups mark convert
 sudo rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+sudo yum groupinstall -y "Development Tools"
+#sudo yum update -y && sudo yum install -y git2u-all curl gcc kernel-devel kernel-headers dkms make bzip2 perl wget net-tools vim rsync bind-utils whois bash-completion*
+sudo yum remove -y  git
 sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
-sudo yum update -y && sudo yum install -y git2u-all curl gcc kernel-devel kernel-headers dkms make bzip2 perl wget net-tools vim rsync bind-utils whois bash-completion*
+sudo yum install -y git2u-all curl bzip2 perl wget net-tools vim rsync bind-utils whois bash-completion openssl-devel 
 export KERN_DIR=/usr/src/kernels/`uname -r`
 
 #wget http://download.virtualbox.org/virtualbox/6.0.10/VBoxGuestAdditions_6.0.10.iso
