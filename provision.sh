@@ -5,7 +5,7 @@ sudo yum update -y
 sudo yum groupinstall -y "Development Tools"
 sudo yum remove -y  git
 sudo yum install -y https://centos7.iuscommunity.org/ius-release.rpm
-sudo yum install -y git2u-all curl bzip2 perl wget net-tools vim rsync bind-utils whois bash-completion openssl-devel psmisc
+sudo yum install -y git2u-all curl bzip2 perl wget net-tools vim rsync bind-utils whois bash-completion* openssl-devel psmisc nc
 
 # Cleanup
 echo "==> Clean up yum cache of metadata and packages to save space"
